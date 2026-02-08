@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,600,700&display=swap" rel="stylesheet">
+    <title>WordUp</title>
+    <link href="/static/css/main.css" rel="stylesheet">
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" style="display: none !important;"></div>
+    <div><img src="/img/favicon.png" style="max-width: 30px;position:absolute;float:right;right:10px;margin-top: -10px;"></div>
+    <div class="popupWindow">
+        <div id="LoggedIn">
+            <p style="font-size:12px;">You are logged in to:</p>
+            <h4 id="accountEmail">example@example.com</h4>
+            <div>
+                <button id="logoutButton" class="btn btn-sm btn-info">Logout</button><hr />
+                <p style="font-size:14px;">Are you missing data? <a id="SyncButton" style="text-decoration:underline">Try Sync</a></p>
+            </div>
+        </div>
+
+        <div id="LoggedOut">
+
+            <div>
+                <div><img id="spinner" src="https://cdn-wordup.com/extension/loading.gif" /></div>
+                <p id="loginKeyP">
+                    1. Open WordUp on your phone<br>
+                    2. Open the My Account page<br>
+                    3. Scroll down to the end<br>
+                    4. Tap "Authorise access"<br>
+                    5. Type <span id="loginKey">000000000</span><br>
+                    6. Tap OK<br>
+                    <div id="howToGifDiv"></div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/wordup.js"></script>
+    <script src="/static/js/util.js"></script>
+</body>
+
+</html>

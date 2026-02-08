@@ -1,0 +1,16 @@
+
+.word-up-layer *:after,
+.word-up-layer *:before {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.word-up-layer h1,
+.word-up-layer h2,
+.word-up-layer h3,
+.word-up-layer h4,
+.word-up-layer h5,
+.word-up-layer p {
+    padding: 0;
+    margin: 0;
+}

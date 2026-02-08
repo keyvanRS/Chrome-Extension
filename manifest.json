@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "WordUp",
+  "description": "It helps you to complete your WordUp knowledge map by automatically highlighting the words you don't know and showing their meaning.",
+  "version": "2.4",
+  "author": "WordUp App Ltd",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "WordUp",
+    
+    "default_icon": {
+      "16": "img/favicon.png",
+      "32": "img/favicon.png",
+      "48": "img/favicon.png",
+      "128": "img/favicon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>","*://*/"],
+      "all_frames": true,
+      "css": ["glideJs/dist/css/glide.core.min.css", "glideJs/dist/css/glide.theme.min.css", "base.css", "popup/popup.css", "content/content.css"],
+      "js": ["glideJs/dist/glide.js", "popup/popup.js", "content/content.js", "static/js/util.js"]
+    }
+  ],
+  "icons": {
+    "16": "img/favicon.png",
+    "32": "img/favicon.png",
+    "48": "img/favicon.png",
+    "128": "img/favicon.png"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://*/",
+    "https://*/"
+  ],
+  "optional_host_permissions": [
+
+  ],
+  "web_accessible_resources": [{
+    "resources": ["img/favicon.png", "img/speakerIcon.png", "img/Knew.png", "img/Check.png", "welcome.html"],
+    "matches": ["<all_urls>"]
+   }]
+}

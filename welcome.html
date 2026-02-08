@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="scripts/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <title>WordUp</title>
+
+    <style>
+        body.wordupBody {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .wordupBody h4 {
+            font-weight: 600;
+        }
+
+        .wordupBody h5 {
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+
+        .wordupBody #loginKeyP li {
+            margin-bottom: 15px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            body.wordupBody .header h6 {
+                text-align: center !important;
+            }
+
+            body.wordupBody .header .logo {
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="wordupBody">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container-fluid" style="background-color: #641C93; padding: 15px;">
+        <div class="container">
+            <div class="row header">
+                <div class="col-md-6 logo"><a href="https://wordupapp.co"><img style="max-width: 250px;"
+                            src="https://cdn-wordup.com/weekly-emails/img/logo.png"></a></div>
+                <h6 class="col-md-6 text-right" style="color:#32BDD2;vertical-align:middle;padding-top:15px;">Chrome
+                    Extension</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding:60px 0;">
+        <div class="exlogin">
+            <div id="LoggedOut">
+                <div>
+                    <img id="spinner" src="https://cdn-wordup.com/extension/loading.gif" />
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 style="font-weight:bolder;margin:20px 20px;">Login</h2>
+                            <ol id="loginKeyP" style="display: None;">
+                                <li>Open WordUp on your phone</li>
+                                <li>Go to settings</li>
+                                <li>Tap on Chrome Extension</li>
+                                <li>Tap <strong>"Authorise access"</strong></li>
+                                <li>Type <span id="loginKey" style="color: #32BDD2">000-000-000</span></li>
+                                <li>Tap OK</li>
+                            </ol>
+
+                        </div>
+                        <div id="howToGifDiv" class="col-md-4 text-center"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="LoggedIn" style="display: None;">
+                <p style="font-size:12px;">You are logged in to:</p>
+                <h4 id="accountEmail">example@example.com</h4>
+                <div>
+                    <button id="logoutButton" class="btn btn-sm btn-info">Logout</button>
+                    <hr />
+                    <p style="font-size:14px;">Are you missing data? <a id="SyncButton"
+                            style="text-decoration:underline">Try Sync</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="exoverview">
+        <div class="container-fluid" style="background-color: #EFE8F4;">
+            <div class="container" style="padding:60px 0;">
+                <div class="row">
+
+                    <div class="col-md-8 text-left">
+                        <h2 style="font-weight:bo lder;margin:20px 0;">What's WordUp Extension</h2>
+                        <p>As you browse the web, you can complete your WordUp knowledge map. The page you're viewing
+                            will be scanned by WordUp, and every word will be checked against your knowledge map. </p>
+                        <p style="color:#32BDD2">-Blue underline means you should decide if you know this word. </p>
+                        <p style="color:#32BDD2"><img src="img/Knew.png" style="width:20px;" /> Move your mouse over the
+                            blue line to see this icon. </p>
+                    </div>
+                    <div id="image2" class="col-md-4 text-center">
+                        <img id="howToGif" src="img/image1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container" style="padding:60px 0;">
+                <div class="row">
+
+                    <div class="col-md-7 text-left  order-md-2">
+                        <h2 style="font-weight:bolder;margin:20px 0;">How it works</h2>
+                        <h5>WordUp extension helps you in two ways.</h5>
+                        <p>
+                            Firstly, it will help you to complete your WordUp knowledge map. Additionally, once your
+                            knowledge map is complete, it will cleverly highlight any word you do not know on any
+                            webpage, and help you look it up!
+                        </p>
+                        <p style="color:#641C93">-Red underline means you should learn this word. </p>
+                        <p style="color:#641C93"><img src="img/Check.png" style="width:20px;" /> Move your mouse over
+                            the red line to see this icon. </p>
+                    </div>
+
+                    <div id="image2" class="col-md-5 text-center order-md-1">
+                        <img id="howToGif" src="img/image3.png">
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container-fluid" style="background-color: #EFE8F4;">
+            <div class="container" style="padding:60px 0;">
+                <div class="row">
+
+                    <div class="col-md-8 text-left">
+                        <h2 style="font-weight:bolder;margin:20px 0;">Easy access to word definitions</h2>
+                        <h5>WordUp puts your knowledge at your fingertips! </h5>
+                        <p>As a result, you are able to take advantage of your WordUp knowledge map in your daily life
+                            and make the most out of it.</p>
+                        <p style="color:#641C93"><img src="img/Check.png" style="width:20px;" /> Move your mouse over
+                            the red line to see this icon. </p>
+                    </div>
+                    <div id="image2" class="col-md-4 text-center">
+                        <img id="howToGif" src="img/image2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exfooter">
+        <div class="text-center" style="padding:15px;">WordUp Extension version 2.0.1</div>
+    </div>
+
+    <script src="/static/js/wordup.js"></script>
+    <script src="/static/js/util.js"></script>
+</body>
+
+</html>

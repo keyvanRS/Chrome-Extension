@@ -1,0 +1,152 @@
+.login {
+    display: flex
+}
+
+.login .column {
+    margin-right: 20px
+}
+
+.login__header {
+    font-weight: 700
+}
+
+.login__gif {
+    max-width: 200px
+}
+
+.login__pin {
+    color: #add8e6;
+    display: flex;
+    font-style: italic
+}
+
+.logout {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.logout__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px
+}
+
+.logout__btn, #logoutButton, #loginButton{
+    background-color: #555;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    height: 30px;
+
+    width: 100%;
+    padding: 5px;
+}
+
+#SyncButton{
+    margin-left: 10px;
+    font-style: italic;
+    cursor: pointer;
+    color:blue;
+}
+
+#SyncButton:hover{
+    text-decoration: underline;
+}
+
+#loginKeyP{
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.loader {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px
+}
+
+* {
+    box-sizing: border-box
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+#root, #LoggedOut{
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    min-width: 370px;
+    
+}
+
+#LoggedIn{
+    min-height: 100px;
+    min-width: 250px;
+    position: relative;
+}
+
+#LoggedIn > h4{
+    font-size: 13px;
+}
+
+
+#accountEmail{
+    color: #4db4bf;
+    font-weight: 900;
+}
+
+
+#accountEmail {
+    text-align: center !important;
+}
+
+#spinner {
+    max-width: 50px;
+    padding: 10px;
+}
+
+h4, button , #LoggedIn > div, #LoggedOut > div{
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#howToGif {
+    max-width: 300px;
+    max-height: 390px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid #555;
+    margin-top: 10px;
+}
+
+p{
+    font-size: 100%;
+    font-weight: 700;
+}
+
+#loginKey{
+    color: #4db4bf;
+    font-weight: 900;
+}
+
+#root,
+.column,
+.row {
+    display: flex
+}
+
+.column {
+    flex-direction: column
+}
